@@ -67,47 +67,63 @@ document.addEventListener("DOMContentLoaded", () => {
 		firstContent.style.maxHeight = `${firstContent.scrollHeight}px`;
 
 		items.forEach(el => {
-				const button = el.querySelector(buttonSelector);
-				const content = el.querySelector(contentSelector);
+			const button = el.querySelector(buttonSelector);
+			const content = el.querySelector(contentSelector);
 
-				button.addEventListener('click', () => {
-						if (el.dataset.open !== 'true') {
-								// Закрываем все открытые элементы
-								items.forEach(item => {
-										if (item.dataset.open === 'true') {
-												item.dataset.open = 'false';
-												item.classList.remove('active');
-												item.querySelector(buttonSelector).classList.remove('active');
-												item.querySelector(contentSelector).style.maxHeight = '';
-										}
-								});
-
-								// Открываем текущий элемент
-								el.dataset.open = 'true';
-								button.classList.add('active');
-								el.classList.add('active');
-								content.style.maxHeight = `${content.scrollHeight}px`;
-						} else {
-								// Закрываем текущий элемент
-								el.dataset.open = 'false';
-								el.classList.remove('active');
-								button.classList.remove('active');
-								content.style.maxHeight = '';
+			button.addEventListener('click', () => {
+				if (el.dataset.open !== 'true') {
+					// Закрываем все открытые элементы
+					items.forEach(item => {
+						if (item.dataset.open === 'true') {
+							item.dataset.open = 'false';
+							item.classList.remove('active');
+							item.querySelector(buttonSelector).classList.remove('active');
+							item.querySelector(contentSelector).style.maxHeight = '';
 						}
-				});
+					});
 
-				const onResize = () => {
-						if (el.dataset.open === 'true') {
-								if (parseInt(content.style.maxHeight) !== content.scrollHeight) {
-										content.style.maxHeight = `${content.scrollHeight}px`;
-								}
-						}
-				};
+					// Открываем текущий элемент
+					el.dataset.open = 'true';
+					button.classList.add('active');
+					el.classList.add('active');
+					content.style.maxHeight = `${content.scrollHeight}px`;
 
-				window.addEventListener('resize', onResize);
+					// Прокрутка до заголовка после завершения изменения высоты
+					content.addEventListener('transitionend', function onTransitionEnd() {
+						const offset = 110;
+						const elementPosition = el.getBoundingClientRect().top;
+						const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+						window.scrollTo({
+							top: offsetPosition,
+							behavior: 'smooth'
+						});
+
+						content.removeEventListener('transitionend', onTransitionEnd);
+					});
+				} else {
+					// Закрываем текущий элемент
+					el.dataset.open = 'false';
+					el.classList.remove('active');
+					button.classList.remove('active');
+					content.style.maxHeight = '';
+				}
+			});
+
+			const onResize = () => {
+				if (el.dataset.open === 'true') {
+					if (parseInt(content.style.maxHeight) !== content.scrollHeight) {
+						content.style.maxHeight = `${content.scrollHeight}px`;
+					}
+				}
+			};
+
+			window.addEventListener('resize', onResize);
 		});
 	};
-	smoothHeight('.services .main--services__item', '.services .main--services__item--button', '.services .main--services__item--wrapper');
+
+smoothHeight('.services .main--services__item', '.services .main--services__item--button', '.services .main--services__item--wrapper');
+
 
 	// скролл вверх
 	const buttonTop = document.querySelector(".top");
