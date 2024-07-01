@@ -224,6 +224,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		grabCursor: true,
 		loop: true,
 		rotate: true,
+		initialSlide: 2,
 		cardsEffect: {
 			perSlideOffset: 8,
 			perSlideRotate: 1,
