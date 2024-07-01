@@ -34,35 +34,27 @@
 		<div class="container">
 			<div class="row">
 				<div class="header--wrapper">
-					<button class="header--wrapper__back" onclick="window.history.back()">
+					<a href="index.html" class="header--wrapper__back">
 						<svg width="16" height="16" viewBox="0 0 16 16" fill="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
 							<path d="m 14.8801,9.1199009 -6.0886999,-6.08871 3.7e-4,12.1770101 -0.79177,0.7918 -0.79166,-0.7917 -2e-5,-12.1766501 -6.08832,6.08833 L 7.3567499e-8,8.0000009 6.8801101,1.1198909 7.2082301,0.79176987 8.0000001,7.35675e-8 9.1199901,1.1199909 l 6.8800089,6.88001 z"
 								fill="black" />
 						</svg>
-					</button>
+					</a>
 					<div class="header--wrapper__language hidden">
-						<span class="button switch en">En</span>
-						<span class="button switch ru">Ru</span>
+						<span class="button switch">En</span>
 					</div>
-					<span class="header--wrapper__contact button en">Contact</span>
-					<span class="header--wrapper__contact button ru">Связь</span>
+					<span class="header--wrapper__contact button">Contact</span>
 					<button class="header--wrapper__menu" id="menu">
 						<span></span>
 						<span></span>
 					</button>
 					<nav class="menu">
 						<div class="menu--wrapper">
-							<ul class="list en">
+							<ul class="list">
 								<li><a href="index.html">home</a></li>
 								<li><a href="projects.html">projects</a></li>
 								<li><a href="about.html">About Us</a></li>
 								<li class="current-menu-item"><a href="services.html">services</a></li>
-							</ul>
-							<ul class="list ru">
-								<li><a href="index.html">Главная</a></li>
-								<li><a href="projects.html">проекты</a></li>
-								<li><a href="about.html">О нас</a></li>
-								<li class="current-menu-item"><a href="services.html">Услуги</a></li>
 							</ul>
 							<div class="menu--wrapper__contacts">
 								<div class="menu--wrapper__contacts--left">
@@ -90,45 +82,33 @@
 			<div class="container">
 				<div class="row">
 					<div class="main--services__wrapper">
-						<div class="main--services__item active">
-							<h1 class="h3 en"><span>01</span><span>CONCEPT PHASE</span></h1>
-							<h1 class="h3 ru"><span>01</span><span>ЭТАП КОНЦЕПЦИИ</span></h1>
+						<div class="main--services__item watch-animation">
+							<div class="main--services__item--button">
+								<h1 class="h3"><span>01</span><span>CONCEPT PHASE</span></h1>
+							</div>
 							<div class="main--services__item--wrapper">
-								<div class="main--services__item--text en">
+								<div class="main--services__item--text">
 									<p>
 										In a unique combination of innovation and design that gives used coffee capsules a second life, the outsole and insole
 										of the ASH X Nespresso sneakers will be made using Nespresso's recycled coffee grounds while the label on the shoe
 										tongue will incorporate recycled aluminum from the capsules.
 									</p>
-									<p>
-										The chrome-free leather and recycled polyethylene terephthalate (RPET) materials commonly used in the RE/ASH collections also feature throughout the shoe design to
-										further reduce waste of raw materials and minimize the overall environmental impact. Additionally, the design of the two
-										sneakers also incorporates the signature colors and patterns of Nespresso coffee capsules.
-									</p>
 								</div>
-								<div class="main--services__item--text ru">
-									<p>
-										В уникальном сочетании инноваций и дизайна, которое дает использованным кофейным капсулам вторую жизнь, подошва и
-										стелька кроссовок ASH X Nespresso будут изготовлены с использованием переработанной кофейной гущи Nespresso, а этикетка
-										на язычке обуви будет включать переработанный алюминий из капсул.
-									</p>
-									<p>
-										Не содержащая хрома кожа и материалы из переработанного полиэтилентерефталата (RPET), обычно используемые в коллекциях
-										RE/ASH, также используются во всей конструкции обуви, чтобы еще больше сократить отходы сырья и свести к минимуму общее
-										воздействие на окружающую среду. Кроме того, дизайн двух кроссовок также включает фирменные цвета и узоры кофейных
-										капсул Nespresso.
-									</p>
-								</div>
-								<div class="main--services__item--image">
-									<img src="img/page-projects.png" alt="#">
+								<div class="swiper main--services__slider">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide"><img src="img/page-projects.png" alt="#"></div>
+										<div class="swiper-slide"><img src="img/projects/1.png" alt="#"></div>
+										<div class="swiper-slide"><img src="img/page-projects.png" alt="#"></div>
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="main--services__item">
-							<h1 class="h3 en"><span>02</span><span>SKETCH PHASE</span></h1>
-							<h1 class="h3 ru"><span>02</span><span>СТАДИЯ ЭСКИЗОВ</span></h1>
+						<div class="main--services__item watch-animation">
+							<div class="main--services__item--button">
+								<h1 class="h3"><span>02</span><span>SKETCH PHASE</span></h1>
+							</div>
 							<div class="main--services__item--wrapper">
-								<div class="main--services__item--text en">
+								<div class="main--services__item--text">
 									<p>
 										In a unique combination of innovation and design that gives used coffee capsules a second life, the outsole and insole
 										of the ASH X Nespresso sneakers will be made using Nespresso's recycled coffee grounds while the label on the shoe
@@ -140,29 +120,21 @@
 										sneakers also incorporates the signature colors and patterns of Nespresso coffee capsules.
 									</p>
 								</div>
-								<div class="main--services__item--text ru">
-									<p>
-										В уникальном сочетании инноваций и дизайна, которое дает использованным кофейным капсулам вторую жизнь, подошва и
-										стелька кроссовок ASH X Nespresso будут изготовлены с использованием переработанной кофейной гущи Nespresso, а этикетка
-										на язычке обуви будет включать переработанный алюминий из капсул.
-									</p>
-									<p>
-										Не содержащая хрома кожа и материалы из переработанного полиэтилентерефталата (RPET), обычно используемые в коллекциях
-										RE/ASH, также используются во всей конструкции обуви, чтобы еще больше сократить отходы сырья и свести к минимуму общее
-										воздействие на окружающую среду. Кроме того, дизайн двух кроссовок также включает фирменные цвета и узоры кофейных
-										капсул Nespresso.
-									</p>
-								</div>
-								<div class="main--services__item--image">
-									<img src="img/page-projects.png" alt="#">
+								<div class="swiper main--services__slider">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide"><img src="img/page-projects.png" alt="#"></div>
+										<div class="swiper-slide"><img src="img/page-projects.png" alt="#"></div>
+										<div class="swiper-slide"><img src="img/page-projects.png" alt="#"></div>
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="main--services__item">
-							<h1 class="h3 en"><span>03</span><span>MAIN WORK STAGE</span></h1>
-							<h1 class="h3 ru"><span>03</span><span>ОСНОВНОЙ ЭТАП РАБОТЫ</span></h1>
+						<div class="main--services__item watch-animation">
+							<div class="main--services__item--button">
+								<h1 class="h3"><span>03</span><span>MAIN WORK STAGE</span></h1>
+							</div>
 							<div class="main--services__item--wrapper">
-								<div class="main--services__item--text en">
+								<div class="main--services__item--text">
 									<p>
 										In a unique combination of innovation and design that gives used coffee capsules a second life, the outsole and insole
 										of the ASH X Nespresso sneakers will be made using Nespresso's recycled coffee grounds while the label on the shoe
@@ -174,29 +146,21 @@
 										sneakers also incorporates the signature colors and patterns of Nespresso coffee capsules.
 									</p>
 								</div>
-								<div class="main--services__item--text ru">
-									<p>
-										В уникальном сочетании инноваций и дизайна, которое дает использованным кофейным капсулам вторую жизнь, подошва и
-										стелька кроссовок ASH X Nespresso будут изготовлены с использованием переработанной кофейной гущи Nespresso, а этикетка
-										на язычке обуви будет включать переработанный алюминий из капсул.
-									</p>
-									<p>
-										Не содержащая хрома кожа и материалы из переработанного полиэтилентерефталата (RPET), обычно используемые в коллекциях
-										RE/ASH, также используются во всей конструкции обуви, чтобы еще больше сократить отходы сырья и свести к минимуму общее
-										воздействие на окружающую среду. Кроме того, дизайн двух кроссовок также включает фирменные цвета и узоры кофейных
-										капсул Nespresso.
-									</p>
-								</div>
-								<div class="main--services__item--image">
-									<img src="img/page-projects.png" alt="#">
+								<div class="swiper main--services__slider">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide"><img src="img/page-projects.png" alt="#"></div>
+										<div class="swiper-slide"><img src="img/page-projects.png" alt="#"></div>
+										<div class="swiper-slide"><img src="img/page-projects.png" alt="#"></div>
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="main--services__item">
-							<h1 class="h3 en"><span>04</span><span>AUTHOR’S VIEW</span></h1>
-							<h1 class="h3 ru"><span>04</span><span>ВЗГЛЯД АВТОРА</span></h1>
+						<div class="main--services__item watch-animation">
+							<div class="main--services__item--button">
+								<h1 class="h3"><span>04</span><span>AUTHOR’S VIEW</span></h1>
+							</div>
 							<div class="main--services__item--wrapper">
-								<div class="main--services__item--text en">
+								<div class="main--services__item--text">
 									<p>
 										In a unique combination of innovation and design that gives used coffee capsules a second life, the outsole and insole
 										of the ASH X Nespresso sneakers will be made using Nespresso's recycled coffee grounds while the label on the shoe
@@ -208,29 +172,21 @@
 										sneakers also incorporates the signature colors and patterns of Nespresso coffee capsules.
 									</p>
 								</div>
-								<div class="main--services__item--text ru">
-									<p>
-										В уникальном сочетании инноваций и дизайна, которое дает использованным кофейным капсулам вторую жизнь, подошва и
-										стелька кроссовок ASH X Nespresso будут изготовлены с использованием переработанной кофейной гущи Nespresso, а этикетка
-										на язычке обуви будет включать переработанный алюминий из капсул.
-									</p>
-									<p>
-										Не содержащая хрома кожа и материалы из переработанного полиэтилентерефталата (RPET), обычно используемые в коллекциях
-										RE/ASH, также используются во всей конструкции обуви, чтобы еще больше сократить отходы сырья и свести к минимуму общее
-										воздействие на окружающую среду. Кроме того, дизайн двух кроссовок также включает фирменные цвета и узоры кофейных
-										капсул Nespresso.
-									</p>
-								</div>
-								<div class="main--services__item--image">
-									<img src="img/page-projects.png" alt="#">
+								<div class="swiper main--services__slider">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide"><img src="img/page-projects.png" alt="#"></div>
+										<div class="swiper-slide"><img src="img/projects/1.png" alt="#"></div>
+										<div class="swiper-slide"><img src="img/page-projects.png" alt="#"></div>
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="main--services__item">
-							<h1 class="h3 en"><span>05</span><span>Project Done</span></h1>
-							<h1 class="h3 ru"><span>05</span><span>Проект выполнен</span></h1>
+						<div class="main--services__item watch-animation">
+							<div class="main--services__item--button">
+								<h1 class="h3"><span>05</span><span>Project Done</span></h1>
+							</div>
 							<div class="main--services__item--wrapper">
-								<div class="main--services__item--text en">
+								<div class="main--services__item--text">
 									<p>
 										In a unique combination of innovation and design that gives used coffee capsules a second life, the outsole and insole
 										of the ASH X Nespresso sneakers will be made using Nespresso's recycled coffee grounds while the label on the shoe
@@ -242,21 +198,12 @@
 										sneakers also incorporates the signature colors and patterns of Nespresso coffee capsules.
 									</p>
 								</div>
-								<div class="main--services__item--text ru">
-									<p>
-										В уникальном сочетании инноваций и дизайна, которое дает использованным кофейным капсулам вторую жизнь, подошва и
-										стелька кроссовок ASH X Nespresso будут изготовлены с использованием переработанной кофейной гущи Nespresso, а этикетка
-										на язычке обуви будет включать переработанный алюминий из капсул.
-									</p>
-									<p>
-										Не содержащая хрома кожа и материалы из переработанного полиэтилентерефталата (RPET), обычно используемые в коллекциях
-										RE/ASH, также используются во всей конструкции обуви, чтобы еще больше сократить отходы сырья и свести к минимуму общее
-										воздействие на окружающую среду. Кроме того, дизайн двух кроссовок также включает фирменные цвета и узоры кофейных
-										капсул Nespresso.
-									</p>
-								</div>
-								<div class="main--services__item--image">
-									<img src="img/page-projects.png" alt="#">
+								<div class="swiper main--services__slider">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide"><img src="img/page-projects.png" alt="#"></div>
+										<div class="swiper-slide"><img src="img/projects/1.png" alt="#"></div>
+										<div class="swiper-slide"><img src="img/page-projects.png" alt="#"></div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -272,15 +219,10 @@
 				<div class="footer--wrapper">
 					<div class="footer--wrapper__top">
 						<nav class="menu--footer">
-							<ul class="list en">
+							<ul class="list">
 								<li><a href="projects.html">projects</a></li>
 								<li><a href="about.html">about</a></li>
 								<li><a href="services.html">services</a></li>
-							</ul>
-							<ul class="list ru">
-								<li><a href="projects.html">проекты</a></li>
-								<li><a href="about.html">о нас</a></li>
-								<li><a href="services.html">услуги</a></li>
 							</ul>
 						</nav>
 						<div class="footer--wrapper__scroll">
@@ -290,8 +232,7 @@
 									<path d="M1.80005 1.80005H12.1334V12.1334" stroke="white" stroke-width="2.06667" stroke-linecap="square" stroke-linejoin="round"/>
 								</svg>
 							</div>
-							<span class="en">back to the top</span>
-							<span class="ru">наверх</span>
+							<span>back to the top</span>
 						</div>
 					</div>
 					<div class="footer--wrapper__bottom">
@@ -315,12 +256,12 @@
 		</svg>
 	</div>
 
-	<div class="modal en">
+	<div class="modal">
 		<div class="modal--wrapper">
 			<div class="modal--wrapper__title">
 				<span class="h3">Leave a request</span>
 				<p>You will be contacted shortly</p>
-				<div class="close en">
+				<div class="close">
 					<span></span>
 					<span></span>
 				</div>
@@ -330,25 +271,6 @@
 				<input type="email" placeholder="Your Email">
 				<textarea cols="30" rows="10" placeholder="Your wishes"></textarea>
 				<button class="button">send</button>
-			</form>
-		</div>
-	</div>
-
-	<div class="modal ru">
-		<div class="modal--wrapper">
-			<div class="modal--wrapper__title">
-				<span class="h3">Оставьте заявку</span>
-				<p>С вами свяжутся в ближайшее время</p>
-				<div class="close ru">
-					<span></span>
-					<span></span>
-				</div>
-			</div>
-			<form action="#">
-				<input type="text" placeholder="Ваше Имя">
-				<input type="email" placeholder="Ваша Почта">
-				<textarea cols="30" rows="10" placeholder="Ваши Пожелания"></textarea>
-				<button class="button">отправить</button>
 			</form>
 		</div>
 	</div>

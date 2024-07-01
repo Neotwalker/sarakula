@@ -5,7 +5,7 @@
 
 	<meta charset="utf-8">
 
-	<title class="en">SARAKULA INTERIORS STUDIO</title>
+	<title>SARAKULA INTERIORS STUDIO</title>
 	<meta name="description" content="#">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -41,28 +41,20 @@
 						</svg>
 					</button>
 					<div class="header--wrapper__language hidden">
-						<span href="#" class="button switch en">En</span>
-						<span href="#" class="button switch ru">Ru</span>
+						<span href="#" class="button switch">En</span>
 					</div>
-					<a href="#" class="header--wrapper__contact button en">Contact</a>
-					<a href="#" class="header--wrapper__contact button ru">Связь</a>
+					<a href="#" class="header--wrapper__contact button">Contact</a>
 					<button class="header--wrapper__menu" id="menu">
 						<span></span>
 						<span></span>
 					</button>
 					<nav class="menu">
 						<div class="menu--wrapper">
-							<ul class="list en">
+							<ul class="list">
 								<li class="current-menu-item"><a href="index.html">Home</a></li>
 								<li><a href="projects.html">projects</a></li>
 								<li><a href="about.html">About Us</a></li>
 								<li><a href="services.html">services</a></li>
-							</ul>
-							<ul class="list ru">
-								<li class="current-menu-item"><a href="index.html">Главная</a></li>
-								<li><a href="projects.html">проекты</a></li>
-								<li><a href="about.html">О нас</a></li>
-								<li><a href="services.html">Услуги</a></li>
 							</ul>
 							<div class="menu--wrapper__contacts">
 								<div class="menu--wrapper__contacts--left">
@@ -91,9 +83,8 @@
 				<div class="row">
 					<div class="main--about__wrapper">
 						<div class="main--about__wrapper--left">
-							<h1 class="h1 en watch-animation">About Us</h1>
-							<h1 class="h1 ru watch-animation">О нас</h1>
-							<div class="main--about__wrapper--text en watch-animation">
+							<h1 class="h1 watch-animation">About Us</h1>
+							<div class="main--about__wrapper--text watch-animation">
 								<p>
 									We are young studio of ambitious guys who’s striving to make this world more beautiful, called Sarakula Interiors
 									Studio, currently based in Crimea.
@@ -104,18 +95,9 @@
 									choosing a design for your character
 								</p>
 							</div>
-							<div class="main--about__wrapper--text ru watch-animation">
-								<p>
-									Мы молодая студия амбициозных ребят, стремящихся сделать этот мир красивее, под названием Sarakula Interiors Studio, на данный момент базирующаяся в Крыму.
-								</p>
-								<p>
-									Екатерина Саракула, основатель Студии, человек с прекрасным вкусом и девятилетним опытом в дизайне интерьеров, готовый
-									как предложить совершенно необычные авторские решения, так и работать вместе, подбирая дизайн под свой характер.
-								</p>
-							</div>
 						</div>
 						<div class="main--about__wrapper--right watch-animation">
-							<img src="img/about/about.png" alt="#">
+							<img src="img/about/about.png" alt="#" oncontextmenu="return false;">
 						</div>
 					</div>
 				</div>
@@ -129,15 +111,10 @@
 				<div class="footer--wrapper">
 					<div class="footer--wrapper__top">
 						<nav class="menu--footer">
-							<ul class="list en">
+							<ul class="list">
 								<li><a href="projects.html">projects</a></li>
 								<li><a href="about.html">about</a></li>
 								<li><a href="services.html">services</a></li>
-							</ul>
-							<ul class="list ru">
-								<li><a href="projects.html">проекты</a></li>
-								<li><a href="about.html">о нас</a></li>
-								<li><a href="services.html">услуги</a></li>
 							</ul>
 						</nav>
 						<div class="footer--wrapper__scroll">
@@ -147,8 +124,7 @@
 									<path d="M1.80005 1.80005H12.1334V12.1334" stroke="white" stroke-width="2.06667" stroke-linecap="square" stroke-linejoin="round"/>
 								</svg>
 							</div>
-							<span class="en">back to the top</span>
-							<span class="ru">наверх</span>
+							<span>back to the top</span>
 						</div>
 					</div>
 					<div class="footer--wrapper__bottom">
@@ -172,12 +148,12 @@
 		</svg>
 	</div>
 
-	<div class="modal en">
+	<div class="modal">
 		<div class="modal--wrapper">
 			<div class="modal--wrapper__title">
 				<span class="h3">Leave a request</span>
 				<p>You will be contacted shortly</p>
-				<div class="close en">
+				<div class="close">
 					<span></span>
 					<span></span>
 				</div>
@@ -186,26 +162,11 @@
 				<input type="text" placeholder="Your Name">
 				<input type="email" placeholder="Your Email">
 				<textarea cols="30" rows="10" placeholder="Your wishes"></textarea>
-				<button class="button">send</button>
-			</form>
-		</div>
-	</div>
-
-	<div class="modal ru">
-		<div class="modal--wrapper">
-			<div class="modal--wrapper__title">
-				<span class="h3">Оставьте заявку</span>
-				<p>С вами свяжутся в ближайшее время</p>
-				<div class="close ru">
-					<span></span>
-					<span></span>
+				<div class="form--check">
+					<input type="checkbox" name="agree" class="custom-checkbox" id="agree">
+					<label class="check" for="agree"><span>Согласен с <a href="/privacy-policy/">Политикой конфиденциальности</a></span></label>
 				</div>
-			</div>
-			<form action="#">
-				<input type="text" placeholder="Ваше Имя">
-				<input type="email" placeholder="Ваша Почта">
-				<textarea cols="30" rows="10" placeholder="Ваши Пожелания"></textarea>
-				<button class="button">отправить</button>
+				<button class="button">send</button>
 			</form>
 		</div>
 	</div>

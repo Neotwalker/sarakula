@@ -34,35 +34,27 @@
 		<div class="container">
 			<div class="row">
 				<div class="header--wrapper">
-					<button class="header--wrapper__back" onclick="window.history.back()">
+					<a href="index.html" class="header--wrapper__back">
 						<svg width="16" height="16" viewBox="0 0 16 16" fill="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
 							<path d="m 14.8801,9.1199009 -6.0886999,-6.08871 3.7e-4,12.1770101 -0.79177,0.7918 -0.79166,-0.7917 -2e-5,-12.1766501 -6.08832,6.08833 L 7.3567499e-8,8.0000009 6.8801101,1.1198909 7.2082301,0.79176987 8.0000001,7.35675e-8 9.1199901,1.1199909 l 6.8800089,6.88001 z"
 								fill="black" />
 						</svg>
-					</button>
+					</a>
 					<div class="header--wrapper__language hidden">
-						<span class="button switch en">En</span>
-						<span class="button switch ru">Ru</span>
+						<span class="button switch">En</span>
 					</div>
-					<span class="header--wrapper__contact button en">Contact</span>
-					<span class="header--wrapper__contact button ru">Связь</span>
+					<span class="header--wrapper__contact button">Contact</span>
 					<button class="header--wrapper__menu" id="menu">
 						<span></span>
 						<span></span>
 					</button>
 					<nav class="menu">
 						<div class="menu--wrapper">
-							<ul class="list en">
+							<ul class="list">
 								<li class="current-menu-item"><a href="index.html">main</a></li>
 								<li><a href="projects.html">projects</a></li>
 								<li><a href="about.html">About</a></li>
 								<li><a href="contacts.html">Contact</a></li>
-							</ul>
-							<ul class="list ru">
-								<li class="current-menu-item"><a href="index.html">Главная</a></li>
-								<li><a href="projects.html">проекты</a></li>
-								<li><a href="about.html">О нас</a></li>
-								<li><a href="contacts.html">Контакты</a></li>
 							</ul>
 							<div class="menu--wrapper__contacts">
 								<div class="menu--wrapper__contacts--left">
@@ -91,53 +83,36 @@
 				<div class="row">
 					<div class="case--repair__title--wrapper">
 						<div class="case--repair__title--left">
-							<h1 class="h1 en accent">BRUNI</h1>
-							<h2 class="h3 en">small cofee shop</h2>
-							<h1 class="h1 ru accent">Бруни</h1>
-							<h2 class="h3 ru">небольшая кофейня</h2>
+							<h1 class="h1 accent">BRUNI</h1>
+							<h2 class="h3">small cofee shop</h2>
 						</div>
 						<div class="case--repair__title--right">
 							<div class="case--repair__title--block">
-								<span class="en overhead">ARCHITECT</span>
-								<span class="ru overhead">АРХИТЕКТОР</span>
-								<span class="name en">Kate Sarakula</span>
-								<span class="name ru">Екатерина Саракула</span>
+								<span class="overhead">ARCHITECT</span>
+								<span class="name">Kate Sarakula</span>
 							</div>
 							<div class="case--repair__title--block">
-								<span class="en overhead">Photo credits</span>
-								<span class="ru overhead">Фото</span>
-								<span class="name en">
+								<span class="overhead">Photo credits</span>
+								<span class="name">
 									<span>Kate Sarakula</span> 
 									<span>Gleb Gurenko</span>
 								</span>
-								<span class="name ru">
-									<span>Екатерина Саракула</span>
-									<span>Глеб Гуренко</span>
-								</span>
 							</div>
 							<div class="case--repair__title--block">
-								<span class="en overhead">Location</span>
-								<span class="ru overhead">Расположение</span>
-								<span class="name en">Crimea, Evpatoria</span>
-								<span class="name ru">Крым, Евпатория</span>
+								<span class="overhead">Location</span>
+								<span class="name">Crimea, Evpatoria</span>
 							</div>
 							<div class="case--repair__title--block">
-								<span class="en overhead">PROJECT AREA</span>
-								<span class="ru overhead">Площадь ПРОЕКТА</span>
-								<span class="name en">13 sq. m</span>
-								<span class="name ru">13 кв.м</span>
+								<span class="overhead">PROJECT AREA</span>
+								<span class="name">13 sq. m</span>
 							</div>
 							<div class="case--repair__title--block">
-								<span class="en overhead">Project year</span>
-								<span class="ru overhead">Год ПРОЕКТА</span>
-								<span class="name en">2022</span>
-								<span class="name ru">2022</span>
+								<span class="overhead">Project year</span>
+								<span class="name">2022</span>
 							</div>
 							<div class="case--repair__title--block">
-								<span class="en overhead">Project year</span>
-								<span class="ru overhead">Год ПРОЕКТА</span>
-								<span class="name en">2022</span>
-								<span class="name ru">2022</span>
+								<span class="overhead">Project year</span>
+								<span class="name">2022</span>
 							</div>
 						</div>
 					</div>
@@ -147,27 +122,22 @@
 		<section class="case--repair__mainImage">
 			<div class="container">
 				<div class="row">
-					<img src="img/case/case-main.png" alt="#">
+					<img src="img/case/case-main.png" alt="#" oncontextmenu="return false;">
 				</div>
 			</div>
 		</section>
 		<section class="case--repair__about">
 			<div class="container">
 				<div class="row">
-					<h2 class="h2 accent en">About</h2>
-					<h2 class="h2 accent ru">Подробнее</h2>
-					<span class="subtitle en left">
+					<h2 class="h2 accent">About</h2>
+					<span class="subtitle left">
 						Bruni is&nbsp;a&nbsp;small coffee shop located in&nbsp;western Crimea in&nbsp;the resort town of&nbsp;Yevpatoria.
 						A&nbsp;small and cozy city with many old streets and buildings. Bruni coffee shop can be&nbsp;found among them.
 					</span>
-					<span class="subtitle ru left">
-						Бруни&nbsp;&mdash; небольшая кофейня, расположенная на&nbsp;западе Крыма в&nbsp;курортном городе Евпатория. Маленький
-						и&nbsp;уютный город со&nbsp;множеством старинных улиц и&nbsp;зданий. Среди них можно найти кофейню Бруни.
-					</span>
 					<div class="case--repair__about--images">
-						<img src="img/case/about/1.png" alt="#">
-						<img src="img/case/about/2.png" alt="#">
-						<img src="img/case/about/3.png" alt="#">
+						<img src="img/case/about/1.png" alt="#" oncontextmenu="return false;">
+						<img src="img/case/about/2.png" alt="#" oncontextmenu="return false;">
+						<img src="img/case/about/3.png" alt="#" oncontextmenu="return false;">
 					</div>
 				</div>
 			</div>
@@ -175,9 +145,8 @@
 		<section class="case--repair__concept">
 			<div class="container">
 				<div class="row">
-					<h2 class="h2 accent en">Concept</h2>
-					<h2 class="h2 accent ru">Концепция</h2>
-					<span class="subtitle en left">
+					<h2 class="h2 accent">Concept</h2>
+					<span class="subtitle left">
 						Initially, the specification was a&nbsp;light gray coffee shop with accent chairs. But as&nbsp;usual, I&nbsp;wanted
 						to&nbsp;do&nbsp;something unusual bearing in&nbsp;mind the context of&nbsp;a&nbsp;resort town. So&nbsp;I&nbsp;had the
 						idea to&nbsp;combine tradition with modernity. Tradition is&nbsp;a&nbsp;reference to&nbsp;the tactility of&nbsp;the
@@ -186,20 +155,12 @@
 						strict forms.
 						A&nbsp;flexible mirror in&nbsp;this context enlarges a&nbsp;small space and creates the effect of&nbsp;a&nbsp;portal
 						to&nbsp;the shifting sands, with a&nbsp;wave-like reflection.
-					</span>
-					<span class="subtitle ru left">
-						Изначально спецификацией была светло-серая кофейня с&nbsp;акцентными стульями. Но, как обычно, хотелось сделать что-то необычное с&nbsp;учетом контекста курортного города. Так у&nbsp;меня появилась идея совместить традиции с&nbsp;современностью.
-						Традиция&nbsp;&mdash; это отсылка к&nbsp;тактильности города, старым зданиям, цветам песка и&nbsp;глины, неровной
-						штукатурке и&nbsp;гладкости песчаных пляжей. В&nbsp;отличие от&nbsp;этого, материалы, созданные
-						в&nbsp;производстве&nbsp;&mdash; металл, гибкое зеркало, бетон&nbsp;&mdash; холодные и&nbsp;строгие формы.
-						Гибкое зеркало в&nbsp;данном контексте увеличивает небольшое пространство и&nbsp;создает эффект портала в&nbsp;зыбучие
-						пески, с&nbsp;волнообразным отражением.
 					</span>
 					<div class="case--repair__concept--images">
-						<img src="img/case/case-concept-1.png" alt="#">
-						<img src="img/case/case-concept-2.png" alt="#">
+						<img src="img/case/case-concept-1.png" alt="#" oncontextmenu="return false;">
+						<img src="img/case/case-concept-2.png" alt="#" oncontextmenu="return false;">
 					</div>
-					<span class="subtitle en">
+					<span class="subtitle">
 						Initially, the specification was a&nbsp;light gray coffee shop with accent chairs. But as&nbsp;usual, I&nbsp;wanted
 						to&nbsp;do&nbsp;something unusual bearing in&nbsp;mind the context of&nbsp;a&nbsp;resort town. So&nbsp;I&nbsp;had the
 						idea to&nbsp;combine tradition with modernity. Tradition is&nbsp;a&nbsp;reference to&nbsp;the tactility of&nbsp;the
@@ -208,15 +169,6 @@
 						strict forms.
 						A&nbsp;flexible mirror in&nbsp;this context enlarges a&nbsp;small space and creates the effect of&nbsp;a&nbsp;portal
 						to&nbsp;the shifting sands, with a&nbsp;wave-like reflection.
-					</span>
-					<span class="subtitle ru">
-						Изначально спецификацией была светло-серая кофейня с&nbsp;акцентными стульями. Но, как обычно, хотелось сделать что-то
-						необычное с&nbsp;учетом контекста курортного города. Так у&nbsp;меня появилась идея совместить традиции
-						с&nbsp;современностью. Традиция&nbsp;&mdash; это отсылка к&nbsp;тактильности города, старым зданиям, цветам песка
-						и&nbsp;глины, неровной штукатурке и&nbsp;гладкости песчаных пляжей. В&nbsp;отличие от&nbsp;этого, материалы, созданные
-						в&nbsp;производстве&nbsp;&mdash; металл, гибкое зеркало, бетон&nbsp;&mdash; холодные и&nbsp;строгие формы.
-						Гибкое зеркало в&nbsp;данном контексте увеличивает небольшое пространство и&nbsp;создает эффект портала в&nbsp;зыбучие
-						пески, с&nbsp;волнообразным отражением.
 					</span>
 				</div>
 			</div>
@@ -224,9 +176,8 @@
 		<section class="case--repair__process">
 			<div class="container">
 				<div class="row">
-					<h2 class="h2 accent en">Process</h2>
-					<h2 class="h2 accent ru">Процесс</h2>
-					<span class="subtitle en left">
+					<h2 class="h2 accent">Process</h2>
+					<span class="subtitle left">
 						Initially, the specification was a&nbsp;light gray coffee shop with accent chairs. But as&nbsp;usual, I&nbsp;wanted
 						to&nbsp;do&nbsp;something unusual bearing in&nbsp;mind the context of&nbsp;a&nbsp;resort town. So&nbsp;I&nbsp;had the
 						idea to&nbsp;combine tradition with modernity. Tradition is&nbsp;a&nbsp;reference to&nbsp;the tactility of&nbsp;the
@@ -236,21 +187,13 @@
 						A&nbsp;flexible mirror in&nbsp;this context enlarges a&nbsp;small space and creates the effect of&nbsp;a&nbsp;portal
 						to&nbsp;the shifting sands, with a&nbsp;wave-like reflection.
 					</span>
-					<span class="subtitle ru left">
-						Изначально спецификацией была светло-серая кофейня с&nbsp;акцентными стульями. Но, как обычно, хотелось сделать что-то необычное с&nbsp;учетом контекста курортного города. Так у&nbsp;меня появилась идея совместить традиции с&nbsp;современностью.
-						Традиция&nbsp;&mdash; это отсылка к&nbsp;тактильности города, старым зданиям, цветам песка и&nbsp;глины, неровной
-						штукатурке и&nbsp;гладкости песчаных пляжей. В&nbsp;отличие от&nbsp;этого, материалы, созданные
-						в&nbsp;производстве&nbsp;&mdash; металл, гибкое зеркало, бетон&nbsp;&mdash; холодные и&nbsp;строгие формы.
-						Гибкое зеркало в&nbsp;данном контексте увеличивает небольшое пространство и&nbsp;создает эффект портала в&nbsp;зыбучие
-						пески, с&nbsp;волнообразным отражением.
-					</span>
 					<div class="case--repair__process--images">
-						<img src="img/case/process/1.png" alt="#">
-						<img src="img/case/process/2.png" alt="#">
-						<img src="img/case/process/3.png" alt="#">
-						<img src="img/case/process/4.png" alt="#">
-						<img src="img/case/process/5.png" alt="#">
-						<img src="img/case/process/6.png" alt="#">
+						<img src="img/case/process/1.png" alt="#" oncontextmenu="return false;">
+						<img src="img/case/process/2.png" alt="#" oncontextmenu="return false;">
+						<img src="img/case/process/3.png" alt="#" oncontextmenu="return false;">
+						<img src="img/case/process/4.png" alt="#" oncontextmenu="return false;">
+						<img src="img/case/process/5.png" alt="#" oncontextmenu="return false;">
+						<img src="img/case/process/6.png" alt="#" oncontextmenu="return false;">
 					</div>
 				</div>
 			</div>
@@ -263,15 +206,10 @@
 				<div class="footer--wrapper">
 					<div class="footer--wrapper__top">
 						<nav class="menu--footer">
-							<ul class="list en">
+							<ul class="list">
 								<li><a href="projects.html">projects</a></li>
 								<li><a href="about.html">about</a></li>
 								<li><a href="services.html">services</a></li>
-							</ul>
-							<ul class="list ru">
-								<li><a href="projects.html">проекты</a></li>
-								<li><a href="about.html">о нас</a></li>
-								<li><a href="services.html">услуги</a></li>
 							</ul>
 						</nav>
 						<div class="footer--wrapper__scroll">
@@ -281,8 +219,7 @@
 									<path d="M1.80005 1.80005H12.1334V12.1334" stroke="white" stroke-width="2.06667" stroke-linecap="square" stroke-linejoin="round"/>
 								</svg>
 							</div>
-							<span class="en">back to the top</span>
-							<span class="ru">наверх</span>
+							<span>back to the top</span>
 						</div>
 					</div>
 					<div class="footer--wrapper__bottom">
@@ -306,12 +243,12 @@
 		</svg>
 	</div>
 
-	<div class="modal en">
+	<div class="modal">
 		<div class="modal--wrapper">
 			<div class="modal--wrapper__title">
 				<span class="h3">Leave a request</span>
 				<p>You will be contacted shortly</p>
-				<div class="close en">
+				<div class="close">
 					<span></span>
 					<span></span>
 				</div>
@@ -321,25 +258,6 @@
 				<input type="email" placeholder="Your Email">
 				<textarea cols="30" rows="10" placeholder="Your wishes"></textarea>
 				<button class="button">send</button>
-			</form>
-		</div>
-	</div>
-
-	<div class="modal ru">
-		<div class="modal--wrapper">
-			<div class="modal--wrapper__title">
-				<span class="h3">Оставьте заявку</span>
-				<p>С вами свяжутся в ближайшее время</p>
-				<div class="close ru">
-					<span></span>
-					<span></span>
-				</div>
-			</div>
-			<form action="#">
-				<input type="text" placeholder="Ваше Имя">
-				<input type="email" placeholder="Ваша Почта">
-				<textarea cols="30" rows="10" placeholder="Ваши Пожелания"></textarea>
-				<button class="button">отправить</button>
 			</form>
 		</div>
 	</div>
