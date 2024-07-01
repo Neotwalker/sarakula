@@ -220,12 +220,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	const swiper = new Swiper('.swiper', {
 		// Optional parameters
-		effect: "flip",
+		effect: "cards",
 		grabCursor: true,
+		loop: true,
+		rotate: true,
 		cardsEffect: {
 			perSlideOffset: 8,
 			perSlideRotate: 1,
-			slideShadows: false,
 		},
 	});
 	
