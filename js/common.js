@@ -233,7 +233,6 @@ document.addEventListener("DOMContentLoaded", () => {
 	const swiper = new Swiper('.swiper', {
 		// Optional parameters
 		effect: "cards",
-		grabCursor: true,
 		loop: true,
 		rotate: true,
 		initialSlide: 2,
@@ -243,7 +242,9 @@ document.addEventListener("DOMContentLoaded", () => {
 		},
 	});
 	
-	let mixer = mixitup('.main--projects__grid');
+	if (document.querySelector('.main--projects__grid')){
+		let mixer = mixitup('.main--projects__grid');
+	}
 
 	let buttonsProjectType = document.querySelectorAll('.main--projects__type .button');
 	buttonsProjectType.forEach(button => {
@@ -252,6 +253,8 @@ document.addEventListener("DOMContentLoaded", () => {
 			button.classList.add('active');
 		});
 	});
+
+	Fancybox.bind("[data-fancybox]", {});
 
 });
 
