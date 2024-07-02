@@ -7,12 +7,12 @@ document.addEventListener("DOMContentLoaded", () => {
 	// открытие меню
 	let buttonToOpenMenu = document.querySelector('.header--wrapper__menu');
 	let menu = document.querySelector('.menu');
-	let body = document.querySelector('body');
+	let html = document.querySelector('html');
 
 	buttonToOpenMenu.onclick = () => {
 	buttonToOpenMenu.classList.toggle('active');
 	menu.classList.toggle('active');
-	body.classList.toggle('overflow');
+	html.classList.toggle('overflow');
 	}
 
 	// открытие модального окна
@@ -22,32 +22,27 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	menuOpen.onclick = () => {
 		modal.classList.add('active');
-		body.classList.add('overflow');
-	}
-
-	menuOpen.onclick = () => {
-		modal.classList.add('active');
-		body.classList.add('overflow');
+		html.classList.add('overflow');
 	}
 
 	modalClose.onclick = () => {
 		menuOpen.classList.remove('active');
 		modal.classList.remove('active');
-		body.classList.remove('overflow');
+		html.classList.remove('overflow');
 	}
 
-	body.onclick = (event) => {
+	html.onclick = (event) => {
 		if (buttonToOpenMenu.classList.contains('active')) {
 			if (!menu.contains(event.target) && !buttonToOpenMenu.contains(event.target) && !event.target.closest('.menu .menu--wrapper')) {
 				buttonToOpenMenu.classList.remove('active');
 				menu.classList.remove('active');
-				body.classList.remove('overflow');
+				html.classList.remove('overflow');
 			}
 		}
 		if (modal.classList.contains('active')) {
 			if (!event.target.closest('.header--wrapper__contact') && !event.target.closest('.modal .modal--wrapper') && !event.target.closest('.modal .modal--close')) {
 				modal.classList.remove('active');
-				document.body.classList.remove('overflow');
+				html.classList.remove('overflow');
 			}
 		}
 	}
@@ -89,18 +84,20 @@ document.addEventListener("DOMContentLoaded", () => {
 					content.style.maxHeight = `${content.scrollHeight}px`;
 
 					// Прокрутка до заголовка после завершения изменения высоты
-					content.addEventListener('transitionend', function onTransitionEnd() {
-						const offset = 110;
-						const elementPosition = el.getBoundingClientRect().top;
-						const offsetPosition = elementPosition + window.pageYOffset - offset;
-
-						window.scrollTo({
-							top: offsetPosition,
-							behavior: 'smooth'
+					if (innerWidth <= 768) {
+						content.addEventListener('transitionend', function onTransitionEnd() {
+							const offset = 110;
+							const elementPosition = el.getBoundingClientRect().top;
+							const offsetPosition = elementPosition + window.pageYOffset - offset;
+	
+							window.scrollTo({
+								top: offsetPosition,
+								behavior: 'smooth'
+							});
+	
+							content.removeEventListener('transitionend', onTransitionEnd);
 						});
-
-						content.removeEventListener('transitionend', onTransitionEnd);
-					});
+					}
 				} else {
 					// Закрываем текущий элемент
 					el.dataset.open = 'false';
@@ -121,8 +118,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			window.addEventListener('resize', onResize);
 		});
 	};
-
-smoothHeight('.services .main--services__item', '.services .main--services__item--button', '.services .main--services__item--wrapper');
+	smoothHeight('.services .main--services__item', '.services .main--services__item--button', '.services .main--services__item--wrapper');
 
 
 	// скролл вверх
@@ -247,6 +243,15 @@ smoothHeight('.services .main--services__item', '.services .main--services__item
 		},
 	});
 	
+	let mixer = mixitup('.main--projects__grid');
+
+	let buttonsProjectType = document.querySelectorAll('.main--projects__type .button');
+	buttonsProjectType.forEach(button => {
+		button.addEventListener('click', () => {
+			buttonsProjectType.forEach(btn => btn.classList.remove('active'));
+			button.classList.add('active');
+		});
+	});
 
 });
 
